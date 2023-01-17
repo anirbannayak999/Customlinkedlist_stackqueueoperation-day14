@@ -21,7 +21,7 @@ public class linkedlist<E> {
     void dispaly() {
         Node<E> temp = head;
         while (temp != null) {
-            System.out.println("the temp"+temp.data);
+            System.out.println("the temp append data"+temp.data);
             temp = temp.next;
 
         }

@@ -20,6 +20,13 @@ public class linkedlistmain {
         else
             System.out.println("POP Last Successfully done.Pop data : " + popLastElement);
         linkedlist1.dispaly();
+        Node<Integer> searchElement = linkedlist1.search(30);
+        if(searchElement == null)
+            System.out.println("Element not Found.");
+        else {
+            System.out.println("Element Found.");
+            System.out.println(searchElement);
+        }
 
     }
 }

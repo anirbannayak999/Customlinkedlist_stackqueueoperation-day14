@@ -2,12 +2,12 @@ package com.bridgelabz;
 
 import javax.xml.crypto.Data;
 
-public class linkedlist<K> {
-    Node<K> head;
-    Node<K> tail;
+public class linkedlist<E> {
+    Node<E> head;
+    Node<E> tail;
 
-    void push(K data) {
-        Node<K> newnode1 = new Node<>(data);
+    void push(E data) {
+        Node<E> newnode1 = new Node<>(data);
         if (head == null) {
             head = newnode1;
             tail = newnode1;
@@ -19,7 +19,7 @@ public class linkedlist<K> {
     }
 
     void dispaly() {
-        Node<K> temp = head;
+        Node<E> temp = head;
         while (temp != null) {
             System.out.println("the temp"+temp.data);
             temp = temp.next;
@@ -27,6 +27,16 @@ public class linkedlist<K> {
         }
 
 
+    }
+    void append(E value){
+        Node<E> newNode = new Node(value);
+        if(head == null) {
+            head = newNode;
+            tail = newNode;
+        }else {
+            tail.next = newNode;
+            tail = newNode;
+        }
     }
 
 }

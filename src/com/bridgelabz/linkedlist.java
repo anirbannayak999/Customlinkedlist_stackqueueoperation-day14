@@ -47,6 +47,18 @@ public class linkedlist<E> {
             head = head.next;
             return popData;
         }
+    }E popLast() {
+        if(head == null)
+            return null;
+
+        E popLastData = tail.data;
+        Node<E> temp = head;
+        while(temp.next != tail) {
+            temp = temp.next;
+        }
+        tail = temp;
+        temp.next = null;
+        return popLastData;
     }
 
 }

@@ -14,7 +14,12 @@ public class linkedlistmain {
         }else
             System.out.println("POP First Successfully done.Pop data : " + popData);
         linkedlist1.dispaly();
-
+        Integer popLastElement = (Integer) linkedlist1.popLast();
+        if(popLastElement == null)
+            System.out.println("Empty linked list.");
+        else
+            System.out.println("POP Last Successfully done.Pop data : " + popLastElement);
+        linkedlist1.dispaly();
 
     }
 }

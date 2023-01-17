@@ -14,7 +14,10 @@ public class Node<R> {
 
 
     }
-
+    @Override
+    public String toString() {
+        return "[data=" + data + ", next=" + next + "]";
+    }
 
 
 }

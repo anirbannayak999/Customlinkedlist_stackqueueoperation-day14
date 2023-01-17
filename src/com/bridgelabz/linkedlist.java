@@ -21,12 +21,12 @@ public class linkedlist<K> {
     void dispaly() {
         Node<K> temp = head;
         while (temp != null) {
-            System.out.println(temp.data);
+            System.out.println("the temp"+temp.data);
             temp = temp.next;
 
         }
 
 
     }
-    
+
 }

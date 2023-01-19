@@ -1,4 +1,4 @@
-package com.bridgelabz;
+package com.bridgelabz.linkedlisted;
 
 public class linkedlistmain {
     public static void main(String[] args) {
@@ -24,8 +24,9 @@ public class linkedlistmain {
         if(searchElement == null)
             System.out.println("Element not Found.");
         else {
-            System.out.println("Element Found.");
+            System.out.println("Element Found.data ");
             System.out.println(searchElement);
+
 
         }
         linkedlist<Integer> Linkedlist4 = new linkedlist <>();

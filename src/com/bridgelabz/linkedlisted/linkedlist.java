@@ -1,6 +1,4 @@
-package com.bridgelabz;
-
-import javax.xml.crypto.Data;
+package com.bridgelabz.linkedlisted;
 
 public class linkedlist<E> {
     Node<E> head;

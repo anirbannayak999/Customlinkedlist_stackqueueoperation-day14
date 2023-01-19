@@ -90,4 +90,35 @@ public class linkedlist<E> {
         }
 
     }
+    int size() {
+        int count = 0;
+        if(head == null)
+            return count;
+        Node<E> temp = head;
+        while(temp != null) {
+            count ++;
+            temp = temp.next;
+        }
+        System.out.println("Size of the linked list is : " + count);
+        return count;
+    }
+
+    /* Delete a node  */
+    void pop(E data) {
+        if(head == null) {
+            System.out.println("Empty LinkedList");
+            return;
+        }
+
+        Node<E> temp = head;
+        while(temp != null) {
+            if(temp.next.data.equals(data)) {
+                temp.next = temp.next.next;
+                System.out.println(data + " successfully deleted.");
+                return;
+            }
+            temp = temp.next;
+        }
+        System.out.println("Not Found!!!");
+    }
 }

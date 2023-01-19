@@ -1,4 +1,4 @@
-package com.bridgelabz;
+package com.bridgelabz.linkedlisted;
 
 public class Node<R> {
     R data;

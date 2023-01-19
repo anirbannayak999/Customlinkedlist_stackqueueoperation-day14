@@ -38,6 +38,10 @@ public class linkedlistmain {
 
         Linkedlist4.popAfter(30, 40);
         Linkedlist4.dispaly();
+        System.out.println("-----------------------_");
+        Linkedlist4.pop(40);
+        Linkedlist4.size();
+        Linkedlist4.dispaly();
 
     }
 }
